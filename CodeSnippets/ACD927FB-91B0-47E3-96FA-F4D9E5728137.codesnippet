@@ -3,19 +3,27 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@pwd</string>
+	<string>GCDGlobal</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeBlock</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, weak) id&lt;&lt;#protocol#&gt;&gt; &lt;#delegate#&gt;;</string>
+	<string>dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        // 处理耗时操作在此次添加
+        
+        //通知主线程刷新
+        dispatch_async(dispatch_get_main_queue(), ^{
+            //在主线程刷新UI
+            
+        });
+    });</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>05293237-D313-43AF-9B6C-CFB9EC33B389</string>
+	<string>ACD927FB-91B0-47E3-96FA-F4D9E5728137</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Property Weak Delegate</string>
+	<string>GCDGlobal</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>

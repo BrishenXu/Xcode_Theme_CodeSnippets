@@ -3,19 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>@pwd</string>
+	<string>Nibload</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>ClassInterfaceMethods</string>
+		<string>CodeExpression</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, weak) id&lt;&lt;#protocol#&gt;&gt; &lt;#delegate#&gt;;</string>
+	<string>[[[NSBundle mainBundle] loadNibNamed:NSStringFromClass([self class]) owner:nil options:nil] firstObject]</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>05293237-D313-43AF-9B6C-CFB9EC33B389</string>
+	<string>6C4033CA-E5B1-4185-91AC-217E9DABD49E</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Property Weak Delegate</string>
+	<string>Nibload</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
