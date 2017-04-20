@@ -9,7 +9,8 @@
 		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>@property (nonatomic, copy) &lt;#ReturnType#&gt; (^&lt;#blockClass#&gt;) (&lt;#ParameterClass#&gt; &lt;#parameter#&gt;);</string>
+	<string>/** &lt;#Description#&gt; */
+@property (nonatomic, copy) &lt;#ReturnType#&gt; (^&lt;#blockClass#&gt;) (&lt;#ParameterClass#&gt; &lt;#parameter#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>16CA0308-F0CF-488B-903C-BDF1C26A725B</string>
 	<key>IDECodeSnippetLanguage</key>
