@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>@alert</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>UIAlertController *alertController = [UIAlertController alertControllerWithTitle:&lt;#(nullable NSString *)#&gt; message:&lt;#(nullable NSString *)#&gt; preferredStyle:&lt;#(UIAlertControllerStyle)#&gt;];
+        UIAlertAction *&lt;#cancelAction#&gt; = [UIAlertAction actionWithTitle:&lt;#@"取消"#&gt; style:&lt;#UIAlertActionStyleCancel#&gt; handler:&lt;#^(UIAlertAction * _Nonnull action)handler#&gt;];
+        UIAlertAction *&lt;#confirmAction#&gt; = [UIAlertAction [UIAlertAction actionWithTitle:&lt;#@"确定"#&gt; style:&lt;#UIAlertActionStyle#&gt; handler:&lt;#^(UIAlertAction * _Nonnull action)handler#&gt;];
+        [alertController addAction:cancelAction];
+        [alertController addAction:&lt;#confirmAction#&gt;];
+        [self presentViewController:alertController animated:YES completion:nil];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>F680139E-4EA3-4ABA-A9E0-0ACBE2E266E7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Alert</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
