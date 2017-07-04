@@ -10,28 +10,28 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark lazy loading...
--(UITableView *)tableView {
+- (UITableView *)tableView {
     if (!_tableView) {
-        _tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
-        _tableView.delegate = self;
-        _tableView.dataSource = self;
-        
+        UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        tableView.delegate = self;
+        tableView.dataSource = self;
         [_tableView registerClass:[&lt;#TableViewCell#&gt; class] forCellReuseIdentifier:@"&lt;#cellReuseIdentifier#&gt;"];
+        
+        _tableView = tableView;
     }
     return _tableView;
 }
 
-#pragma mark -
-#pragma mark tableView delegate
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return &lt;#expression#&gt;
+#pragma mark - tableView delegate
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return &lt;#expression#&gt;;
 }
 
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return &lt;#expression#&gt;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return &lt;#expression#&gt;;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *identify = @"&lt;#cellReuseIdentifier#&gt;";
     &lt;#TableViewCell#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:identify];
     if (!cell) {
@@ -40,16 +40,15 @@
     return cell;
 }
 
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-}
-</string>
+}</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>5C558710-27F4-4E4B-847A-82DBCF1E7738</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>Create a TableViewDelegate</string>
+	<string>Create TableViewDelegate</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
