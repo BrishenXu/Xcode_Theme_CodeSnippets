@@ -10,13 +10,17 @@
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>#pragma mark lazy loading...
+static NSString *identify = @"&lt;#cellReuseIdentifier#&gt;";
 - (UITableView *)tableView {
     if (!_tableView) {
         UITableView *tableView = [[UITableView alloc]initWithFrame:self.view.bounds style:UITableViewStylePlain];
         tableView.delegate = self;
         tableView.dataSource = self;
-        [_tableView registerClass:[&lt;#TableViewCell#&gt; class] forCellReuseIdentifier:@"&lt;#cellReuseIdentifier#&gt;"];
-        
+        tableView.separatorStyle = &lt;#UITableViewCellSeparatorStyleNone#&gt;;
+        tableView.rowHeight = UITableViewAutomaticDimension;
+        tableView.estimatedRowHeight = 44.0;
+        [tableView registerClass:[&lt;#TableViewCell#&gt; class] forCellReuseIdentifier:identify];
+        [self.view addSubview:tableView];
         _tableView = tableView;
     }
     return _tableView;
@@ -32,7 +36,6 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *identify = @"&lt;#cellReuseIdentifier#&gt;";
     &lt;#TableViewCell#&gt; *cell = [tableView dequeueReusableCellWithIdentifier:identify];
     if (!cell) {
         cell = [&lt;#TableViewCell#&gt; &lt;#Method#&gt;];
