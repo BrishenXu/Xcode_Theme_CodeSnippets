@@ -19,6 +19,7 @@ static NSString *identify = @"&lt;#cellReuseIdentifier#&gt;";
         tableView.separatorStyle = &lt;#UITableViewCellSeparatorStyleNone#&gt;;
         tableView.rowHeight = UITableViewAutomaticDimension;
         tableView.estimatedRowHeight = 44.0;
+        tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
         [tableView registerClass:[&lt;#TableViewCell#&gt; class] forCellReuseIdentifier:identify];
         [self.view addSubview:tableView];
         _tableView = tableView;
